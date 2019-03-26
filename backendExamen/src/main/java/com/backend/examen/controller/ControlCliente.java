@@ -40,12 +40,15 @@ public class ControlCliente {
 	public KpiCliente kpiClientes() {
 		KpiCliente kpi = new KpiCliente();
 		double prm =0.0;
-		prm = promedio(prm);
+		promedio(prm);
 		
 		kpi.setPromedioClientes(String.valueOf(prm));
 		
 		double varianza=0.0;
-		varianza = varianza(prm, varianza)/ 10f;
+		
+		varianza(prm, varianza);
+		
+		varianza=varianza/(lstClientes.size()-1);
 		
 		kpi.setDesviacionEstandar(String.valueOf(Math.sqrt(varianza)));
 		
@@ -63,9 +66,9 @@ public class ControlCliente {
 	private double varianza(double prm, double varianza) {
 		for(int i = 0 ; i<lstClientes.size(); i++){
 			   double rango;
-			   rango = Math.pow(Double.parseDouble(lstClientes.get(0).getEdad()) - prm,2f);
+			   rango = Math.pow(Double.parseDouble(lstClientes.get(0).getEdad()) - prm,2);
 			   varianza = varianza + rango;
-			  }
+	    }
 		return varianza;
 	}
 	

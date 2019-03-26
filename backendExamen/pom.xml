@@ -24,6 +24,7 @@
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<java.version>1.8</java.version>
 		<springfox.version>2.4.0</springfox.version>
+		<start-class>com.backend.examen.BackendExamenApplication</start-class>
 	</properties>
 	
 	 <distributionManagement>
