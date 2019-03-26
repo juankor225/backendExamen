@@ -1,0 +1,24 @@
+# Spring properties
+spring:
+  application:
+    name: ControlCliente  # Service registers under this name
+
+endpoints:
+  health:
+    enabled: yes
+  shutdown:
+    enabled: yes
+
+management:
+    context-path: /admin
+logging:
+  level:
+    org:
+      springframework:
+        web:
+          client: DEBUG
+
+# HTTP Server
+server:
+  port: 4444   # HTTP (Tomcat) port
+
