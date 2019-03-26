@@ -62,7 +62,17 @@
             <version>${springfox.version}</version>
         </dependency>
 
-	
+    <dependency>
+        <groupId>org.codehaus.jackson</groupId>
+        <artifactId>jackson-jaxrs</artifactId>
+        <version>1.9.0</version>
+    </dependency>
+	<!-- https://mvnrepository.com/artifact/org.codehaus.jackson/jackson-xc -->
+	<dependency>
+	    <groupId>org.codehaus.jackson</groupId>
+	    <artifactId>jackson-xc</artifactId>
+	    <version>1.9.0</version>
+	</dependency>	
 	
 	</dependencies>
 
